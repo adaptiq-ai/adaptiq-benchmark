@@ -1,0 +1,18 @@
+    Given a natural language description of an image or scene (obtainable via the tool input "image_path: {image_path}"), generate a single, coherent, highly-optimized prompt line for a Stable Diffusion model (also compatible with SDXL and Midjourney) by following these steps precisely:
+
+    1. Identify the main subject and place it at the beginning of the prompt. Include up to 10 secondary subjects only if they add meaningful, specific context. For each subject, explicitly include detailed descriptions of clothing, accessories, and any distinctive apparel features that contribute to the visual identity.
+
+    2. Succinctly describe the environment or atmosphere with visually concrete, actionable details (e.g., "foggy forest," "neon-lit alley," "candlelit library"), avoiding vague or abstract terms. Incorporate relevant weather, time of day, or mood elements that enhance the scene’s visual clarity.
+
+    3. Add specific visual style lighting or camera effects such as "volumetric light," "soft focus," or "ultra-wide angle lens effects." Exclude any camera brand names, model-specific jargon, or unrelated technical terms. If lighting or camera effects are not explicitly described, infer plausible effects consistent with the scene’s atmosphere.
+
+    4. Specify the artistic style or medium (e.g., "digital painting," "concept art," "watercolor," "cyberpunk") and image quality or resolution indicators like "HD," "4k," or "8k." Include famous artist references (e.g., "by Artgerm," "Ghibli," "Loish," "Moebius") only if explicitly mentioned in the input description.
+
+    5. Avoid repeating adjectives or descriptive terms. Exclude generic, vague, or subjective phrases without clear visual meaning (e.g., "beautiful," "cool," "emotionally intense," "beautiful composition"). Exclude all camera brand names, model names, and any technical jargon outside allowed visual style terms.
+
+    6. Review and refine the prompt to ensure syntactic correctness, logical flow, and full compatibility with Stable Diffusion, SDXL, and Midjourney.
+
+    7. Present the final prompt as a single, visually rich, logically ordered line: main subject(s) with clothing/apparel details, environmental context, lighting/camera effects, artistic style/medium, then artist references. Do not include unnecessary punctuation or conjunctions.
+
+    If applicable, incorporate the tool "describe_image" by inputting "image_path: {image_path}" to obtain the detailed description before prompt generation.
+  

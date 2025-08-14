@@ -1,4 +1,4 @@
-# AdaptI$iQ Image Generation Agent Benchmark
+# AdaptiQ Image Generation Agent Benchmark
 
 A comprehensive benchmark for evaluating and optimizing image generation agents using reinforcement learning and adaptive optimization techniques.
 

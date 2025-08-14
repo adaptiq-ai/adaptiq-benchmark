@@ -1,10 +1,10 @@
-# Adaptiq Image Generation Agent Benchmark
+# AdaptI$iQ Image Generation Agent Benchmark
 
 A comprehensive benchmark for evaluating and optimizing image generation agents using reinforcement learning and adaptive optimization techniques.
 
 ## Overview
 
-The Adaptiq Image Generation Agent Benchmark is part of the [Adaptiq framework](https://github.com/adaptiq-ai/adaptiq) - an adaptive optimization system that uses reinforcement learning to improve AI agent performance while reducing costs. This benchmark specifically focuses on evaluating image generation agents across various metrics including quality, prompt adherence, efficiency, and resource utilization.
+The AdaptiQ Image Generation Agent Benchmark is part of the [AdaptiQ framework](https://github.com/AdaptiQ-ai/AdaptiQ) - an adaptive optimization system that uses reinforcement learning to improve AI agent performance while reducing costs. This benchmark specifically focuses on evaluating image generation agents across various metrics including quality, prompt adherence, efficiency, and resource utilization.
 
 ## Quick Start
 
@@ -32,7 +32,7 @@ pip install uv
 Clone the repository and set up the environment:
 
 ```bash
-git clone https://github.com/adaptiq-ai/adaptiq-benchmark.git
+git clone https://github.com/AdaptiQ-ai/AdaptiQ-benchmark.git
 cd image_gen_agent
 ```
 
@@ -104,10 +104,10 @@ Represents the agent's situation at a specific step, defined by features like:
 - **Key_Context:** Accumulated relevant information (validated flags/data)
 
 ### 🎯 Action (a)
-A selection from a predefined menu of discrete, strategic actions (e.g., Use_Tool_X, Action_Write_Content). Adaptiq maps observed log events to these predefined actions.
+A selection from a predefined menu of discrete, strategic actions (e.g., Use_Tool_X, Action_Write_Content). AdaptiQ maps observed log events to these predefined actions.
 
 ### 📊 Q-Table
-The core knowledge base: `Q(state_representation, action) → value`. It stores the learned long-term value of taking an action in a specific state, refined through the Adaptiq loop.
+The core knowledge base: `Q(state_representation, action) → value`. It stores the learned long-term value of taking an action in a specific state, refined through the AdaptiQ loop.
 
 ### 🏆 Reward (R)
 Calculated offline during/after trace reconciliation, guided by predefined rules. It incorporates:
@@ -133,17 +133,17 @@ Q(s,a) ← Q(s,a) + α[R + γ max Q(s',a') - Q(s,a)]
 #### Latency Comparison
 ![Latency Graph](./metrics/latency.jpg)
 
-Adaptiq generates results significantly faster, averaging 2.09 seconds less per task than GPT. This 15% speed boost means faster turnaround and better scalability in production environments.
+AdaptiQ generates results significantly faster, averaging 2.09 seconds less per task than GPT. This 15% speed boost means faster turnaround and better scalability in production environments.
 
 #### Cost Distribution per Image
 ![Cost Graph](./metrics/cost.jpg)
 
-On average, Adaptiq reduces generation costs by 13.6% per image.
+On average, AdaptiQ reduces generation costs by 13.6% per image.
 
 #### Overall Efficiency Score
 ![Efficiency Graph](./metrics/eff.jpg)
 
-When combining quality, speed, and cost, Adaptiq achieves an Efficiency Score of 895.44, outperforming GPT's 658.87 by a wide margin. This metric reflects its balanced performance advantage in real-world workloads.
+When combining quality, speed, and cost, AdaptiQ achieves an Efficiency Score of 895.44, outperforming GPT's 658.87 by a wide margin. This metric reflects its balanced performance advantage in real-world workloads.
 
 **Takeaway:** Cheaper & faster at near-parity quality; ΔCLIP target is ≥ 0; current snapshot shows −0.17.
 
@@ -165,4 +165,4 @@ Test targets are sourced from Pinterest (research use). Original links in `./ima
 
 ---
 
-*Part of the Adaptiq ecosystem for adaptive AI agent optimization*
+*Part of the AdaptiQ ecosystem for adaptive AI agent optimization*

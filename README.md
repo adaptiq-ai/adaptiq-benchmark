@@ -28,6 +28,7 @@ powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 pip install uv
 ```
 
+Clone the repository and set up the environment:
 ```bash
 git clone https://github.com/adaptiq-ai/adaptiq-benchmark.git
 cd image_gen_agent

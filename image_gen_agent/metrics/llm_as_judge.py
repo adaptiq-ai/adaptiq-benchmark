@@ -28,56 +28,7 @@ class EvaluationResult(BaseModel):
     detailed_table: str = Field(..., description="Formatted evaluation table")
     summary: Optional[str] = Field(None, description="Summary of evaluation")
 
-class ErrorHandlingScore(BaseModel):
-    """Error handling assessment for a method"""
-    score: float = Field(..., ge=0, le=100)
-    analysis: str
-    identified_vulnerabilities: List[str]
-    strengths: List[str]
 
-class OutputQuality(BaseModel):
-    """Output quality metrics"""
-    consistency_score: float = Field(..., ge=0, le=100)
-    instruction_following_score: float = Field(..., ge=0, le=100)
-    completeness_score: float = Field(..., ge=0, le=100)
-    coherence_score: float = Field(..., ge=0, le=100)
-    analysis: str
-
-class MethodErrorAssessment(BaseModel):
-    """Complete error assessment for one method"""
-    prompt_error_handling: ErrorHandlingScore
-    output_quality: OutputQuality
-    error_patterns: List[str]
-    overall_reliability_score: float = Field(..., ge=0, le=100)
-
-class ComparativeAnalysis(BaseModel):
-    """Comparative analysis between methods"""
-    winner: str
-    error_rate_difference: float
-    key_differences: List[str]
-    recommendations: List[str]
-
-class ErrorSummary(BaseModel):
-    """Summary of error assessment"""
-    adaptiq_error_rate: float = Field(..., ge=0, le=100)
-    gpt_error_rate: float = Field(..., ge=0, le=100)
-    most_reliable_method: str
-    critical_findings: str
-
-class StructuredErrorScores(BaseModel):
-    """Structured scores for error assessment"""
-    adaptiq: Dict[str, float]
-    gpt: Dict[str, float]
-    winner: str
-    winner_by_reliability: str
-
-class ErrorAssessmentResult(BaseModel):
-    """Complete error assessment result"""
-    error_assessment: Dict[str, MethodErrorAssessment]
-    comparative_analysis: ComparativeAnalysis
-    summary: ErrorSummary
-    formatted_report: str
-    error_scores: StructuredErrorScores
 
 class LLMAsJudgeScore:
     """

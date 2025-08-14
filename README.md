@@ -33,7 +33,7 @@ uv pip install -r requirements.txt
 Set your API keys in the `.env` file:
 ```
 OPENAI_API_KEY=your-openai-key
-GOOGLE_AI_API_KEY=your-google-ai-key  
+GOOGLE_API_KEY=your-google-ai-key  
 REPLICATE_API_KEY=your-replicate-key
 ```
 

@@ -1,0 +1,11 @@
+adaptiq==0.12.2
+google-genai==1.28.0
+google-generativeai==0.8.5
+matplotlib==3.10.5
+openai==1.99.9
+torch
+torchvision
+torchaudio
+numpy
+scipy
+git+https://github.com/openai/CLIP.git

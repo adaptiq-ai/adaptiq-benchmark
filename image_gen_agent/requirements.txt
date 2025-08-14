@@ -9,4 +9,7 @@ torchvision
 torchaudio
 numpy
 scipy
+seaborn
+pillow
+pandas
 git+https://github.com/openai/CLIP.git

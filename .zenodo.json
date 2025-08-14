@@ -1,0 +1,22 @@
+{
+  "title": "AdaptiQ Benchmark 1/5 \u2014 Runtime RL for Image Agents",
+  "upload_type": "software",
+  "description": "Paired benchmark of image-generation agents (CrewAI) with and without a runtime RL layer (AdaptiQ). Measures latency, cost, tokens and CLIP-based quality; includes variance/stability analysis. This release ships code, raw logs, figures and a PDF report with pinned seeds/IDs.",
+  "creators": [
+    {
+      "name": "Wassim Amri"
+    }
+  ],
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/ORG_OR_USER/adaptiq-benchmark"
+    },
+    {
+      "relation": "isIdenticalTo",
+      "identifier": "https://doi.org/10.5281/zenodo.16876744"
+    }
+  ]
+}

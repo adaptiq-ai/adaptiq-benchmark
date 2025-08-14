@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "AdaptiQ Benchmark 1/5 — Runtime RL for Image Agents"
+message: "If you use this software or results, please cite as:"
+authors:
+  - family-names: Amri
+    given-names: Wassim
+version: v0.1.0-bench1
+date-released: 2025-08-14
+doi: 10.5281/zenodo.16876744
+url: https://github.com/ORG_OR_USER/adaptiq-benchmark

@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/1037888682.svg)](https://doi.org/10.5281/zenodo.16876743)
+
+
 # AdaptiQ Image Generation Agent Benchmark
 
 A comprehensive benchmark for evaluating and optimizing image generation agents using reinforcement learning and adaptive optimization techniques.
@@ -164,5 +167,10 @@ Test targets are sourced from Pinterest (research use). Original links in `./ima
 - **Data:** Research use only (Pinterest sources)
 
 ---
+## Assets & Citation
+Release PDF: `reports/bench1/bench1.pdf` • Raw logs: `runs/bench1/metrics.csv`
+
+**Cite this work:**  
+[![DOI](https://zenodo.org/badge/1037888682.svg)](https://doi.org/10.5281/zenodo.16876743)
 
 *Part of the AdaptiQ ecosystem for adaptive AI agent optimization*

@@ -138,7 +138,7 @@ Adaptiq generates results significantly faster, averaging 2.09 seconds less per 
 #### Cost Distribution per Image
 ![Cost Graph](./metrics/cost.jpg)
 
-On average, Adaptiq reduces generation costs by 13.6% per image. Over 100 images, this translated into a total savings of $0.1344, making it a more budget-friendly choice without compromising quality.
+On average, Adaptiq reduces generation costs by 13.6% per image.
 
 #### Overall Efficiency Score
 ![Efficiency Graph](./metrics/eff.jpg)

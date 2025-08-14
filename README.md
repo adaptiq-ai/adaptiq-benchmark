@@ -16,6 +16,18 @@ The Adaptiq Image Generation Agent Benchmark is part of the [Adaptiq framework](
 
 ### Installation
 
+First, install `uv` if you haven't already:
+```bash
+# On macOS and Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# On Windows
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+# Alternative: Install via pip
+pip install uv
+```
+
 ```bash
 git clone https://github.com/adaptiq-ai/adaptiq-benchmark.git
 cd image_gen_agent

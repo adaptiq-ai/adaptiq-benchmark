@@ -44,6 +44,7 @@ Create and activate virtual environment using `uv`:
 ```bash
 uv venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+cd image_gen_agent
 uv pip install -r requirements.txt
 ```
 

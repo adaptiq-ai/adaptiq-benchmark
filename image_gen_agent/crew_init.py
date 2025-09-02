@@ -16,13 +16,14 @@ load_dotenv()
 
 # ✅ Suppress known irrelevant warnings (optional)
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
+from adaptiq.agents.crew_ai import create_crew_instrumental
 
-# ✅ Import AdaptiQ instrumentation decorators
-# - `instrumental_crew_logger`: Logs execution metrics for agents, tools, and tasks
-# - `instrumental_run`: Triggers AdaptiQ run processing, useful for evaluation dashboards
-from adaptiq import instrumental_crew_logger, instrumental_run
+crew_instrumental = create_crew_instrumental()
 
-@instrumental_crew_logger(log_to_console=True)  # ✅ Logs crew-level metrics and agent/task events
+
+@crew_instrumental.crew_logger(
+    log_to_console=True
+) # ✅ Logs crew-level metrics and agent/task events
 def run(inputs: Dict[str, str]):
     """
     Main function to run the Crew execution process.
@@ -40,7 +41,7 @@ def run(inputs: Dict[str, str]):
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 
-@instrumental_run(
+@crew_instrumental.run(
     config_path="./config/adaptiq_config.yml",
     enabled=False,
     feedback="try to give details as much as possible and mention clothes description too"

@@ -1,4 +1,4 @@
-adaptiq==0.12.2
+adaptiq==0.12.7
 google-genai==1.28.0
 google-generativeai==0.8.5
 matplotlib==3.10.5

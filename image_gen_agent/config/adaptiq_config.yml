@@ -50,7 +50,8 @@ agent_modifiable_config:
 # --- Report Output Configuration ---
 # Where AdaptiQ will save optimization reports
 report_config:
-  output_path: "reports/image_gen_v2.md"    # Path for the optimization report (Been set by default)
+    output_path: "./reports/{project_name}.md"    # Path for the optimization report (Been set by default)
+    prompts_path: "./reports/prompts.json"
 
 # --- Alert Mode Configuration ---
 # Configure when AdaptiQ should generate reports

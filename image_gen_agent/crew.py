@@ -9,10 +9,10 @@ from crewai import  LLM, Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from settings import settings
 
-# ✅ AdaptiQ-specific decorators for instrumentation
-# - Logs agent thoughts, tool usage, reasoning
-# - Logs task execution lifecycle and state
-from adaptiq import instrumental_agent_logger, instrumental_task_logger
+
+from adaptiq.agents.crew_ai import create_crew_instrumental
+
+crew_instrumental = create_crew_instrumental()
 
 # ✅ Load environment variables
 from dotenv import load_dotenv
@@ -41,7 +41,7 @@ class GenericCrew():
     agents_config = 'config/agents.yaml'
     tasks_config = 'config/tasks.yaml'
     
-    @instrumental_agent_logger  # ✅ Log reasoning, tool use, etc.
+    @crew_instrumental.agent_logger # ✅ Log reasoning, tool use, etc.
     @agent
 
     def prompt_engineer(self) -> Agent:
@@ -52,7 +52,7 @@ class GenericCrew():
 			verbose=True
 		)
     
-    @instrumental_task_logger  # ✅ Log task execution status
+    @crew_instrumental.task_logger  # ✅ Log task execution status
     @task
     
     def prompt_task(self) -> Task:
